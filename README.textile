@@ -1,0 +1,11 @@
+h1. SuperPOM
+
+p. SuperPOM for Maven-based projects. Defines several aspects of a build-process, such as
+
+* file encoding
+* minimum Java version
+* FindBugs checks
+* PMD checks
+* Checkstyle checks
+
+"!https://secure.travis-ci.org/sebhoss/superpom.png!":http://travis-ci.org/sebhoss/superpom
