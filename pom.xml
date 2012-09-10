@@ -31,10 +31,10 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <groupId>com.github.sebhoss.maven</groupId>
   <artifactId>superpom</artifactId>
-  <version>1</version>
+  <version>1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <inceptionYear>2012</inceptionYear>
-  <url>http://github.com/sebhoss/${project.artifactId}/</url>
+  <url>${github.url}</url>
   <name>SuperPOM for Maven-based projects</name>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -52,10 +52,10 @@
   <!--                                  SOURCE                                 -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <scm>
-    <connection>scm:git:git://github.com/sebhoss/${project.artifactId}.git</connection>
-    <developerConnection>scm:git:git@github.com:sebhoss/${project.artifactId}.git</developerConnection>
+    <connection>${scm.connection}</connection>
+    <developerConnection>${scm.developerConnection}</developerConnection>
     <tag>master</tag>
-    <url>${project.url}</url>
+    <url>${scm.url}</url>
   </scm>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -63,7 +63,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <issueManagement>
     <system>GitHub</system>
-    <url>${project.url}/issues</url>
+    <url>${issueManagement.url}</url>
   </issueManagement>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -89,10 +89,16 @@
     <global.java>1.7</global.java>
 
     <coverage>0</coverage>
-    <pmd.cpd.tokens>24</pmd.cpd.tokens>
+    <pmd.cpd.tokens>30</pmd.cpd.tokens>
 
     <project.build.sourceEncoding>${global.encoding}</project.build.sourceEncoding>
     <project.reporting.outputEncoding>${global.encoding}</project.reporting.outputEncoding>
+
+    <github.url>http://github.com/sebhoss/${project.artifactId}/</github.url>
+    <scm.connection>scm:git:git://github.com/sebhoss/${project.artifactId}.git</scm.connection>
+    <scm.developerConnection>scm:git:git@github.com:sebhoss/${project.artifactId}.git</scm.developerConnection>
+    <scm.url>http://github.com/sebhoss/${project.artifactId}</scm.url>
+    <issueManagement.url>http://github.com/sebhoss/${project.artifactId}/issues</issueManagement.url>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
