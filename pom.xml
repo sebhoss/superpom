@@ -99,6 +99,7 @@
     <scm.developerConnection>scm:git:git@github.com:sebhoss/${project.artifactId}.git</scm.developerConnection>
     <scm.url>http://github.com/sebhoss/${project.artifactId}</scm.url>
     <issueManagement.url>http://github.com/sebhoss/${project.artifactId}/issues</issueManagement.url>
+    <tycho-version>0.16.0</tycho-version>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -177,7 +178,24 @@
         <configuration>
           <source>${global.java}</source>
           <target>${global.java}</target>
+          <compilerId>jdt</compilerId>
+          <compilerArguments>
+            <properties>eclipse-settings/org.eclipse.jdt.core.prefs</properties>
+          </compilerArguments>
         </configuration>
+        <dependencies>
+          <!-- This dependency provides the implementation of compiler "jdt": -->
+          <dependency>
+            <groupId>org.eclipse.tycho</groupId>
+            <artifactId>tycho-compiler-jdt</artifactId>
+            <version>${tycho-version}</version>
+          </dependency>
+          <dependency>
+            <groupId>com.github.sebhoss</groupId>
+            <artifactId>common-resources</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+          </dependency>
+        </dependencies>
       </plugin>
 
       <plugin>
