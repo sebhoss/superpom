@@ -26,7 +26,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               INFORMATIONS                              -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <artifactId>java-parent</artifactId>
+  <artifactId>java-project</artifactId>
   <packaging>pom</packaging>
   <version>1.0.0</version>
 
