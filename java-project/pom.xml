@@ -39,10 +39,11 @@
     <coverage>0</coverage>
     <pmd.cpd.tokens>30</pmd.cpd.tokens>
 
-    <tycho-version>0.16.0</tycho-version>
+    <tycho.version>0.16.0</tycho.version>
     <guava.version>13.0.1</guava.version>
     <guice.version>3.0</guice.version>
-    <spring.version>3.1.2.RELEASE</spring.version>
+    <spring.version>3.1.3.RELEASE</spring.version>
+    <joda-time.version.>2.1</joda-time.version.>
     <junit.version>4.11</junit.version>
     <mockito.version>1.9.5</mockito.version>
     <dbunit.version>2.4.9</dbunit.version>
@@ -126,7 +127,7 @@
           <dependency>
             <groupId>org.eclipse.tycho</groupId>
             <artifactId>tycho-compiler-jdt</artifactId>
-            <version>${tycho-version}</version>
+            <version>${tycho.version}</version>
           </dependency>
           <dependency>
             <groupId>com.github.sebhoss</groupId>
