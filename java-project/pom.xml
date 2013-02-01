@@ -37,7 +37,7 @@
     <global.java>1.7</global.java>
 
     <coverage>0</coverage>
-    <pmd.cpd.tokens>30</pmd.cpd.tokens>
+    <pmd.cpd.tokens>50</pmd.cpd.tokens>
 
     <tycho.version>0.16.0</tycho.version>
     <guava.version>13.0.1</guava.version>
