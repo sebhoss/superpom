@@ -42,6 +42,7 @@
   <!--                                 MODULES                                 -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <modules>
+    <module>java-bom</module>
     <module>java-project</module>
     <module>scala-project</module>
   </modules>
