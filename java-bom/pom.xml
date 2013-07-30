@@ -52,7 +52,7 @@
     <version.org.maven.jar-plugin>2.3.2</version.org.maven.jar-plugin>
     <version.org.maven.bundle-plugin>2.4.0</version.org.maven.bundle-plugin>
     <version.org.maven.findbugs-plugin>2.5.2</version.org.maven.findbugs-plugin>
-    <version.org.maven.pmd-plugin>2.7.1</version.org.maven.pmd-plugin>
+    <version.org.maven.pmd-plugin>3.0.1</version.org.maven.pmd-plugin>
     <version.org.maven.cobertura-plugin>2.5.2</version.org.maven.cobertura-plugin>
     <version.org.maven.site-plugin>3.2</version.org.maven.site-plugin>
     <version.org.maven.github-site-plugin>0.7</version.org.maven.github-site-plugin>
