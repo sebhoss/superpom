@@ -54,7 +54,7 @@
     <version.org.maven.findbugs-plugin>2.5.2</version.org.maven.findbugs-plugin>
     <version.org.maven.pmd-plugin>3.0.1</version.org.maven.pmd-plugin>
     <version.org.maven.cobertura-plugin>2.5.2</version.org.maven.cobertura-plugin>
-    <version.org.maven.site-plugin>3.2</version.org.maven.site-plugin>
+    <version.org.maven.site-plugin>3.3</version.org.maven.site-plugin>
     <version.org.maven.github-site-plugin>0.7</version.org.maven.github-site-plugin>
 
     <version.org.github.sebhoss.common-resources>1.0.0</version.org.github.sebhoss.common-resources>
