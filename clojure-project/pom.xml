@@ -29,7 +29,7 @@
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Clojure Parent</name>
-  <description>Parent POM for alle Clojure-based projects</description>
+  <description>Parent POM for all Clojure-based projects</description>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                                  PLUGINS                                -->
