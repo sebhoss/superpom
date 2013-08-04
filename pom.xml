@@ -39,18 +39,6 @@
   <description>SuperPOM for Maven-based projects</description>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <!--                                 MODULES                                 -->
-  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <modules>
-    <module>java-bom</module>
-    <module>java-project</module>
-    <module>scala-bom</module>
-    <module>scala-project</module>
-    <module>clojure-bom</module>
-    <module>clojure-project</module>
-  </modules>
-
-  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                                 LICENSE                                 -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <licenses>
