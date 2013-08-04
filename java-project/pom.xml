@@ -55,6 +55,35 @@
   <build>
     <plugins>
       <plugin>
+        <groupId>com.mycila.maven-license-plugin</groupId>
+        <artifactId>maven-license-plugin</artifactId>
+        <version>${license-plugin.version}</version>
+        <configuration>
+          <header>documentation-spec/header.txt</header>
+          <strictCheck>true</strictCheck>
+          <aggregate>true</aggregate>
+          <excludes>
+            <exclude>.gitignore</exclude>
+          </excludes>
+        </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>com.github.sebhoss.common</groupId>
+            <artifactId>common-resources</artifactId>
+            <version>${common-resources.version}</version>
+          </dependency>
+        </dependencies>
+        <executions>
+          <execution>
+            <phase>verify</phase>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    
+      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
         <configuration>
