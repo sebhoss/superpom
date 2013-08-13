@@ -1,4 +1,4 @@
-h1. SuperPOM
+h1. SuperPOM "!https://secure.travis-ci.org/sebhoss/superpom.png!":http://travis-ci.org/sebhoss/superpom
 
 p. SuperPOM for Maven-based projects. Defines several aspects of a build-process, such as
 
@@ -7,4 +7,3 @@ p. SuperPOM for Maven-based projects. Defines several aspects of a build-process
 * authors
 * issue and source control management systems
 
-"!https://secure.travis-ci.org/sebhoss/superpom.png!":http://travis-ci.org/sebhoss/superpom
