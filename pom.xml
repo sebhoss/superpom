@@ -9,7 +9,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
-
+  
   <prerequisites>
     <maven>3.0.0</maven>
   </prerequisites>
@@ -31,7 +31,7 @@
   <version>1.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <inceptionYear>2012</inceptionYear>
-  <url>${github.url}</url>
+  <url>http://github.com/sebhoss/superpom/</url>
   <name>SuperPOM</name>
   <description>SuperPOM for Maven-based projects</description>
 
@@ -50,10 +50,10 @@
   <!--                                  SOURCE                                 -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <scm>
-    <connection>${scm.connection}</connection>
-    <developerConnection>${scm.developerConnection}</developerConnection>
+    <connection>scm:git:git://github.com/sebhoss/superpom.git</connection>
+    <developerConnection>scm:git:git@github.com:sebhoss/superpom.git</developerConnection>
     <tag>master</tag>
-    <url>${scm.url}</url>
+    <url>${project.url}</url>
   </scm>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -61,7 +61,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <issueManagement>
     <system>GitHub</system>
-    <url>${issueManagement.url}</url>
+    <url>${project.url}/issues</url>
   </issueManagement>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -87,12 +87,6 @@
 
     <project.build.sourceEncoding>${global.encoding}</project.build.sourceEncoding>
     <project.reporting.outputEncoding>${global.encoding}</project.reporting.outputEncoding>
-
-    <github.url>http://github.com/sebhoss/superpom/</github.url>
-    <scm.connection>scm:git:git://github.com/sebhoss/superpom.git</scm.connection>
-    <scm.developerConnection>scm:git:git@github.com:sebhoss/superpom.git</scm.developerConnection>
-    <scm.url>http://github.com/sebhoss/superpom</scm.url>
-    <issueManagement.url>http://github.com/sebhoss/superpom/issues</issueManagement.url>
   </properties>
 
 </project>
