@@ -5,5 +5,5 @@ p. SuperPOM for Maven-based projects. Defines several aspects of a build-process
 * file encoding
 * license
 * authors
-* issue and source control management systems
+* issue management systems
 
