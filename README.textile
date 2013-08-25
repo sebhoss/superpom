@@ -7,3 +7,16 @@ p. SuperPOM for Maven-based projects. Defines several aspects of a build-process
 * authors
 * issue management systems
 
+h2. Usage
+
+p. Declare this project as a parent inside your projects POM:
+
+bc. <parent>
+  <groupId>com.github.sebhoss</groupId>
+  <artifactId>superpom</artifactId>
+  <version>1.0.1</version>
+</parent>
+
+h2. License
+
+p. This program is free software. It comes without any warranty, to the extent permitted by applicable law. You can redistribute it and/or modify it under the terms of the Do What The Fuck You Want To Public License, Version 2, as published by Sam Hocevar. See "http://www.wtfpl.net/":http://www.wtfpl.net/ for more details.
