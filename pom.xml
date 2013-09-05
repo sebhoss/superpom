@@ -109,6 +109,8 @@
           </excludes>
           <mapping>
             <java>SLASHSTAR_STYLE</java>
+            <clj>SEMICOLON_STYLE</clj>
+            <cljs>SEMICOLON_STYLE</cljs>
           </mapping>
           <properties>
             <owner>${project.developers[0].name}</owner>
