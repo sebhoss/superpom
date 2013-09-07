@@ -14,7 +14,7 @@ p. Declare this project as a parent inside your projects POM:
 bc. <parent>
   <groupId>com.github.sebhoss</groupId>
   <artifactId>superpom</artifactId>
-  <version>1.0.2</version>
+  <version>${superpom.version}</version>
 </parent>
 
 h2. License
