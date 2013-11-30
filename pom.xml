@@ -107,6 +107,7 @@
             <exclude>LICENSE</exclude>
             <exclude>**/.pmdruleset.xml</exclude>
             <exclude>**/.pmd</exclude>
+            <exclude>**/*.prefs</exclude>
           </excludes>
           <mapping>
             <java>SLASHSTAR_STYLE</java>
