@@ -105,6 +105,8 @@
           <excludes>
             <exclude>**/*.textile</exclude>
             <exclude>LICENSE</exclude>
+            <exclude>**/.pmdruleset.xml</exclude>
+            <exclude>**/.pmd</exclude>
           </excludes>
           <mapping>
             <java>SLASHSTAR_STYLE</java>
