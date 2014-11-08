@@ -28,7 +28,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <groupId>com.github.sebhoss</groupId>
   <artifactId>superpom</artifactId>
-  <version>1.0.7-SNAPSHOT</version>
+  <version>1.0.7</version>
   <packaging>pom</packaging>
   <inceptionYear>2012</inceptionYear>
   <url>http://github.com/sebhoss/superpom</url>
