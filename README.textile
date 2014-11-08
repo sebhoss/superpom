@@ -6,6 +6,7 @@ p. SuperPOM for Maven-based projects. Defines several aspects of a build-process
 * license
 * authors
 * issue management systems
+* versioning rules
 
 h2. Usage
 
