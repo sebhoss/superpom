@@ -15,8 +15,10 @@ p. Declare this project as a parent inside your projects POM:
 bc. <parent>
   <groupId>com.github.sebhoss</groupId>
   <artifactId>superpom</artifactId>
-  <version>${superpom.version}</version>
+  <version>${version.superpom}</version>
 </parent>
+
+p. Replace @${version.superpom}@ with the "latest release":http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.github.sebhoss%22%20a%3A%22superpom%22
 
 h2. License
 
