@@ -97,7 +97,7 @@
       <plugin>
         <groupId>com.mycila</groupId>
         <artifactId>license-maven-plugin</artifactId>
-        <version>2.6</version>
+        <version>2.7</version>
         <configuration>
           <header>com/mycila/maven/plugin/license/templates/WTFPL.txt</header>
           <strictCheck>true</strictCheck>
