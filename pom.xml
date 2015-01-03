@@ -31,7 +31,7 @@
   <version>2.0.3-SNAPSHOT</version>
   <packaging>pom</packaging>
   <inceptionYear>2012</inceptionYear>
-  <url>http://sebhoss.github.com/superpom</url>
+  <url>http://sebhoss.github.io/superpom</url>
   <name>SuperPOM</name>
   <description>SuperPOM for Maven-based projects</description>
 
