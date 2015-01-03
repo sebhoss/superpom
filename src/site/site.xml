@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/DECORATION/1.6.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/DECORATION/1.6.0 http://maven.apache.org/xsd/decoration-1.6.0.xsd">
+
+  <skin>
+    <groupId>lt.velykis.maven.skins</groupId>
+    <artifactId>reflow-maven-skin</artifactId>
+    <version>1.1.1</version>
+  </skin>
+  <custom>
+    <reflowSkin>
+      <theme>bootswatch-superhero</theme>
+    </reflowSkin>
+  </custom>
+
+  <bannerLeft>
+    <name>SuperPOM</name>
+    <href>http://sebhoss.github.com/superpom</href>
+  </bannerLeft>
+
+  <body>
+    <menu name="Overview">
+      <item name="About" href=""/>
+      <item name="Usage" href="usage"/>
+      <item name="Compability" href="compability"/>
+    </menu>
+    <menu name="Development">
+      <item name="Required Setup" href="development/setup"/>
+      <item name="Eclipse" href="development/eclipse"/>
+      <item name="Contribute" href="development/contribute"/>
+      <item name="Releasing" href="development/release"/>
+    </menu>
+    <menu name="GitHub">
+      <item name="View" href="https://github.com/sebhoss/superpom/" />
+      <item name="Fork" href="https://github.com/sebhoss/superpom/fork/"/>
+      <item name="Download latest ZIP" href="https://github.com/sebhoss/superpom/archive/superpom-${project.version}.zip"/>
+      <item name="Download latest TAR.GZ" href="https://github.com/sebhoss/superpom/archive/superpom-${project.version}.tar.gz"/>
+      <item name="Report new issue" href="https://github.com/sebhoss/superpom/issues/new/"/>
+    </menu>
+
+    <menu ref="reports" inherit="bottom" />
+  </body>
+</project>
