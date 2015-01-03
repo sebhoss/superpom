@@ -23,7 +23,7 @@
     <menu name="Overview">
       <item name="About" href=""/>
       <item name="Usage" href="usage"/>
-      <item name="Compability" href="compability"/>
+      <item name="Compatibility" href="compatibility"/>
     </menu>
     <menu name="Development">
       <item name="Required Setup" href="development/setup"/>

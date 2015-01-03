@@ -1,4 +1,4 @@
-h2. Compatability
+h2. Compatibility
 
 p. This POM declares the following minimum Maven versions:
 
