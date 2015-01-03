@@ -31,7 +31,6 @@
   <version>2.0.5-SNAPSHOT</version>
   <packaging>pom</packaging>
   <inceptionYear>2012</inceptionYear>
-  <url>http://sebhoss.github.io/superpom</url>
   <name>SuperPOM</name>
   <description>SuperPOM for Maven-based projects</description>
 
@@ -52,25 +51,9 @@
   <scm>
     <connection>scm:git:git://github.com/sebhoss/superpom.git</connection>
     <developerConnection>scm:git:git@github.com:sebhoss/superpom.git</developerConnection>
-    <tag>master</tag>
+    <tag>HEAD</tag>
     <url>https://github.com/sebhoss/superpom</url>
   </scm>
-
-  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <!--                                  ISSUES                                 -->
-  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <issueManagement>
-    <system>GitHub</system>
-    <url>https://github.com/sebhoss/superpom/issues</url>
-  </issueManagement>
-
-  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <!--                                    CI                                   -->
-  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <ciManagement>
-    <system>Travis</system>
-    <url>https://travis-ci.org/sebhoss/superpom</url>
-  </ciManagement>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                                DEVELOPERS                               -->
@@ -91,18 +74,8 @@
   <!--                               ORGANIZATION                              -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <organization>
-    <name>Sebastian Hoß</name>
-    <url>http://sebhoss.github.io/</url>
+    <name>sebhoss</name>
   </organization>
-
-  <distributionManagement>
-    <!-- if no site distribution is specified, the release plugin won't run site-deploy -->
-    <!-- the actual deployment however is done by the github site plugin -->
-    <site>
-      <id>fake</id>
-      <url>file:///fake</url>
-    </site>
-  </distributionManagement>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                                PROPERTIES                               -->
@@ -118,6 +91,14 @@
   <!--                                   BUILD                                 -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <build>
+    <extensions>
+       <extension>
+         <groupId>com.sebhoss.maven</groupId>
+         <artifactId>maven-github-extension</artifactId>
+         <version>1.0.0-SNAPSHOT</version>
+       </extension>
+    </extensions>
+
     <plugins>
       <plugin>
         <groupId>com.mycila</groupId>
