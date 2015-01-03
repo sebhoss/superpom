@@ -95,6 +95,15 @@
     <url>http://sebhoss.github.io/</url>
   </organization>
 
+  <distributionManagement>
+    <!-- if no site distribution is specified, the release plugin won't run site-deploy -->
+    <!-- the actual deployment however is done by the github site plugin -->
+    <site>
+      <id>fake</id>
+      <url>file:///fake</url>
+    </site>
+  </distributionManagement>
+
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                                PROPERTIES                               -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -196,7 +205,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
-        <version>3.3</version>
+        <version>3.4</version>
         <dependencies>
           <dependency>
             <groupId>com.github.sebhoss.doxia</groupId>
