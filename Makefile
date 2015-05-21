@@ -9,3 +9,6 @@ help:
 sonar-analysis:
 	@mvn sonar:sonar -Dsonar.host.url=http://localhost:58200 -Dsonar.jdbc.url=jdbc:postgresql://localhost:58300/sonar
 
+docker-verify:
+	@docker-compose -f build/docker/build-environment.yml up
+
