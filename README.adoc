@@ -2,4 +2,4 @@
 
 == image:https://img.shields.io/maven-central/v/com.github.sebhoss/superpom.svg?style=flat-square["Maven Central", link="https://maven-badges.herokuapp.com/maven-central/com.github.sebhoss/superpom"] image:https://img.shields.io/travis/sebhoss/superpom/master.svg?style=flat-square["Build Status", link="https://travis-ci.org/sebhoss/superpom"]
 
-Super POM for Maven-based projects. For more information take a look at the "project documentation":http://sebhoss.github.io/superpom
+Super POM for Maven-based projects. For more information take a look at the http://sebhoss.github.io/superpom[project documentation]
