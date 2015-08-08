@@ -80,7 +80,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <developers>
     <developer>
-      <id>HoS</id>
+      <id>sebhoss</id>
       <name>Sebastian Hoß</name>
       <email>mail@shoss.de</email>
       <roles>
@@ -128,6 +128,10 @@
             <exclude>**/.pmdruleset.xml</exclude>
             <exclude>**/.pmd</exclude>
             <exclude>**/*.prefs</exclude>
+            <exclude>AUTHORS/*</exclude>
+            <exclude>build/**/*</exclude>
+            <exclude>Makefile</exclude>
+            <exclude>README.adoc</exclude>
           </excludes>
           <mapping>
             <java>SLASHSTAR_STYLE</java>
@@ -222,7 +226,7 @@
       <plugin>
         <groupId>com.github.github</groupId>
         <artifactId>site-maven-plugin</artifactId>
-        <version>0.11</version>
+        <version>0.12</version>
         <executions>
           <execution>
             <goals>

@@ -1,5 +1,0 @@
-h1. SuperPOM 
-
-h2. "!https://img.shields.io/maven-central/v/com.github.sebhoss/superpom.svg?style=flat-square!":https://maven-badges.herokuapp.com/maven-central/com.github.sebhoss/superpom "!https://img.shields.io/travis/sebhoss/superpom/master.svg?style=flat-square!":http://travis-ci.org/sebhoss/superpom
-
-p. Super POM for Maven-based projects. For more information take a look at the "project documentation":http://sebhoss.github.io/superpom
