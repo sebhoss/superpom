@@ -125,6 +125,7 @@
             <exclude>**/*.textile.vm</exclude>
             <exclude>**/*.adoc</exclude>
             <exclude>**/*.adoc.vm</exclude>
+            <exclude>**/*.asciidoc</exclude>
             <exclude>**/site.xml</exclude>
             <exclude>UNLICENSE</exclude>
             <exclude>**/.pmdruleset.xml</exclude>
