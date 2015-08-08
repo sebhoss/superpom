@@ -1,0 +1,3 @@
+== Setting up Eclipse
+
+Import the project using the https://www.eclipse.org/m2e/[M2E plugin]

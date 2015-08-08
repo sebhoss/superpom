@@ -1,3 +1,0 @@
-h2. Setting up Eclipse
-
-p. Import the project using the "M2E plugin":https://www.eclipse.org/m2e/

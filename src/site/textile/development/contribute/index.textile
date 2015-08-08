@@ -1,3 +1,0 @@
-h2. How to contribute
-
-p. Just "fork":https://github.com/sebhoss/superpom/fork the project and send a pull request.

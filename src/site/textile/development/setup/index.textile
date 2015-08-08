@@ -1,3 +1,0 @@
-h2. Required setup
-
-p. Install at least Java 8 and Maven 3.3.1

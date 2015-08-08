@@ -1,0 +1,9 @@
+= About
+
+Super POM for http://maven.apache.org/[Maven-based] projects. Defines several aspects of a build-process, such as
+
+* file encoding
+* license
+* authors
+* issue management systems
+* versioning rules

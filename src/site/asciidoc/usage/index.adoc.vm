@@ -1,9 +1,12 @@
-h1. Usage
+= Usage
 
-p. Declare this project as a parent inside your projects POM:
+Declare this project as a parent inside your projects POM:
 
-bc. <parent>
+[source,xml]
+-----
+<parent>
   <groupId>com.github.sebhoss</groupId>
   <artifactId>superpom</artifactId>
   <version>${project.version}</version>
 </parent>
+-----
