@@ -8,7 +8,7 @@ help:
 	@echo "   2. make docker-verify         - builds the project inside a docker container"
 
 sonar-analysis:
-	@mvn sonar:sonar -Dsonar.host.url=http://localhost:58200 -Dsonar.jdbc.url=jdbc:postgresql://localhost:58300/sonar
+	@mvn sonar:sonar -Dsonar.host.url=http://localhost:51000 -Dsonar.jdbc.url=jdbc:postgresql://localhost:51100/sonar
 
 docker-verify:
 	@docker-compose -f build/docker/build-environment.yml up
