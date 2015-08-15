@@ -131,6 +131,7 @@
             <exclude>**/.pmdruleset.xml</exclude>
             <exclude>**/.pmd</exclude>
             <exclude>**/*.prefs</exclude>
+            <exclude>.mvn/timing.properties</exclude>
             <exclude>AUTHORS/*</exclude>
             <exclude>build/**/*</exclude>
             <exclude>Makefile</exclude>
