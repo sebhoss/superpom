@@ -5,6 +5,4 @@ image:https://img.shields.io/travis/sebhoss/superpom/master.svg?style=flat-squar
 image:https://www.openhub.net/p/superpom/widgets/project_thin_badge.gif["Open Hub statistics", link="https://www.openhub.net/p/superpom"]
 image:https://badges.gitter.im/Join%20Chat.svg["Gitter", link="https://gitter.im/sebhoss/superpom"]
 
-'''
-
 Super POM for Maven-based projects. For more information take a look at the http://sebhoss.github.io/superpom[project documentation]
