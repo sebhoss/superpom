@@ -53,6 +53,7 @@
   <inceptionYear>2012</inceptionYear>
   <name>SuperPOM</name>
   <description>SuperPOM for Maven-based projects</description>
+  <url>https://sebhoss.github.io/superpom/</url>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                                 LICENSE                                 -->
