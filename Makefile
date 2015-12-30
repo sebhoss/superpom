@@ -13,13 +13,13 @@ help:
 	@echo "   7. make docker-verify              - verify the project inside a pre-defined docker container"
 
 display-dependency-updates:
-	@mvn versions:display-dependency-updates
+	@mvn versions:display-dependency-updates -U
 
 display-plugin-updates:
-	@mvn versions:display-plugin-updates
+	@mvn versions:display-plugin-updates -U
 
 display-property-updates:
-	@mvn versions:display-property-updates
+	@mvn versions:display-property-updates -U
 
 sonar-analysis:
 	# http://docs.sonarqube.org/display/SONAR/Analyzing+with+Maven
