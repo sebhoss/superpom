@@ -77,6 +77,17 @@
   </scm>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                        DISTRIBUTION MANAGEMENT                          -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <distributionManagement>
+    <site>
+      <id>github</id>
+      <name>GitHub Pages</name>
+      <url>${project.url}</url>
+    </site>
+  </distributionManagement>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                                DEVELOPERS                               -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <developers>
