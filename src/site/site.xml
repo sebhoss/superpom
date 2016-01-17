@@ -15,8 +15,8 @@
   </custom>
 
   <bannerLeft>
-    <name>SuperPOM</name>
-    <href>http://sebhoss.github.io/superpom</href>
+    <name>${project.name}</name>
+    <href>${project.url}</href>
   </bannerLeft>
 
   <body>
