@@ -30,7 +30,7 @@ sign-waiver:
 	@gpg2 --no-version --armor --sign AUTHORS/WAIVER
 
 release:
-	@mvn -B release:prepare release:perform
+	@mvn release:prepare release:perform
 
 docker-verify:
 	@docker-compose -f build/docker/build-environment.yml run --rm build
