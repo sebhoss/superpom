@@ -27,11 +27,11 @@ sonar-analysis:
 	@mvn sonar:sonar -Dsonar.host.url=http://localhost:59000 -Dsonar.jdbc.url=jdbc:h2:tcp://localhost:59100/sonar
 
 sign-waiver:
-	@gpg --no-version --armor --sign AUTHORS/WAIVER
+	@gpg2 --no-version --armor --sign AUTHORS/WAIVER
 
 release:
 	@mvn -B release:prepare release:perform
 
 docker-verify:
-	@docker-compose -f build/docker/build-environment.yml up
+	@docker-compose -f build/docker/build-environment.yml run --rm build
 

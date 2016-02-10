@@ -1,37 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    This is free and unencumbered software released into the public domain.
-
-    Anyone is free to copy, modify, publish, use, compile, sell, or
-    distribute this software, either in source code form or as a compiled
-    binary, for any purpose, commercial or non-commercial, and by any
-    means.
-
-    In jurisdictions that recognize copyright laws, the author or authors
-    of this software dedicate any and all copyright interest in the
-    software to the public domain. We make this dedication for the benefit
-    of the public at large and to the detriment of our heirs and
-    successors. We intend this dedication to be an overt act of
-    relinquishment in perpetuity of all present and future rights to this
-    software under copyright law.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-    IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-    OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-    ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-    OTHER DEALINGS IN THE SOFTWARE.
-
-    For more information, please refer to <http://unlicense.org>
+	This file is part of SuperPOM. It is subject to the license terms in the LICENSE file found in the top-level
+	directory of this distribution and at http://creativecommons.org/publicdomain/zero/1.0/. No part of SuperPOM,
+	including this file, may be copied, modified, propagated, or distributed except according to the terms contained
+	in the LICENSE file.
 
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <prerequisites>
-    <maven>3.3.3</maven>
+    <maven>3.3.9</maven>
   </prerequisites>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -48,7 +28,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <groupId>com.github.sebhoss</groupId>
   <artifactId>superpom</artifactId>
-  <version>3.0.3-SNAPSHOT</version>
+  <version>4.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <inceptionYear>2012</inceptionYear>
   <name>SuperPOM</name>
@@ -60,8 +40,8 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <licenses>
     <license>
-      <name>UNLICENSE</name>
-      <url>http://unlicense.org/UNLICENSE</url>
+      <name>Creative Commons Zero</name>
+      <url>https://creativecommons.org/publicdomain/zero/1.0/</url>
       <distribution>repo</distribution>
     </license>
   </licenses>
@@ -117,53 +97,41 @@
 
     <project.build.sourceEncoding>${global.encoding}</project.build.sourceEncoding>
     <project.reporting.outputEncoding>${global.encoding}</project.reporting.outputEncoding>
+
+    <version.m-gpg-p>1.6</version.m-gpg-p>
+    <version.nexus-stagig-m-p>1.6.6</version.nexus-stagig-m-p>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                                   BUILD                                 -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <build>
-    <plugins>
-      <plugin>
-        <groupId>com.mycila</groupId>
-        <artifactId>license-maven-plugin</artifactId>
-        <version>2.11</version>
-        <configuration>
-          <header>com/mycila/maven/plugin/license/templates/UNLICENSE.txt</header>
-          <strictCheck>true</strictCheck>
-          <aggregate>true</aggregate>
-          <excludes>
-            <exclude>**/*.textile</exclude>
-            <exclude>**/*.textile.vm</exclude>
-            <exclude>**/*.adoc</exclude>
-            <exclude>**/*.adoc.vm</exclude>
-            <exclude>**/*.asciidoc</exclude>
-            <exclude>**/site.xml</exclude>
-            <exclude>UNLICENSE</exclude>
-            <exclude>**/.pmdruleset.xml</exclude>
-            <exclude>**/.pmd</exclude>
-            <exclude>**/*.prefs</exclude>
-            <exclude>.mvn/timing.properties</exclude>
-            <exclude>AUTHORS/*</exclude>
-            <exclude>build/**/*</exclude>
-            <exclude>Makefile</exclude>
-          </excludes>
-          <mapping>
-            <java>SLASHSTAR_STYLE</java>
-            <clj>SEMICOLON_STYLE</clj>
-            <cljs>SEMICOLON_STYLE</cljs>
-          </mapping>
-        </configuration>
-        <executions>
-          <execution>
-            <phase>verify</phase>
-            <goals>
-              <goal>check</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-gpg-plugin</artifactId>
+          <version>${version.m-gpg-p}</version>
+          <configuration>
+            <executable>gpg2</executable>
+          </configuration>
+        </plugin>
 
+        <plugin>
+          <groupId>org.sonatype.plugins</groupId>
+          <artifactId>nexus-staging-maven-plugin</artifactId>
+          <version>${version.nexus-stagig-m-p}</version>
+          <configuration>
+            <!-- make sure that you have an appropriate entry in your settings.xml -->
+            <serverId>sonatype-nexus-staging</serverId>
+            <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+            <autoReleaseAfterClose>true</autoReleaseAfterClose>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
+    <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
@@ -194,23 +162,7 @@
       <plugin>
         <groupId>org.sonatype.plugins</groupId>
         <artifactId>nexus-staging-maven-plugin</artifactId>
-        <version>1.6.6</version>
         <extensions>true</extensions>
-        <configuration>
-          <!-- make sure that you have an appropiate entry in your settings.xml -->
-          <serverId>sonatype-nexus-staging</serverId>
-          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-          <autoReleaseAfterClose>true</autoReleaseAfterClose>
-        </configuration>
-      </plugin>
-
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-gpg-plugin</artifactId>
-        <version>1.6</version>
-        <configuration>
-          <executable>gpg2</executable>
-        </configuration>
       </plugin>
 
       <plugin>

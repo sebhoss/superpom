@@ -4,21 +4,24 @@ This POM declares the following minimum Maven versions:
 
 .Maven Compability
 |===
-| |1.0.X |2.0.X |3.0.X
+| |1.0.X |2.0.X |3.0.X |4.0.X
 
 |3.3.3
 |
 |
+| ✓
 | ✓
 
 |3.2.3
 |
 |✓
 |
+|
 
 |3.2.1
 |✓
 |✓
+|
 |
 
 |===
